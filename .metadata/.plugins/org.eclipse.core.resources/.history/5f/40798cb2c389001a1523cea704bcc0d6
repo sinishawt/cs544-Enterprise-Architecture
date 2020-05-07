@@ -1,0 +1,10 @@
+package cs544.exercise11_2;
+
+public class InventoryService implements IInvertoryService {
+
+	public int getNumberInStock() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

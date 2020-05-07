@@ -1,0 +1,6 @@
+package edu.miu.cs544.service;
+
+
+public interface MovieService extends BaseReadService{
+
+}

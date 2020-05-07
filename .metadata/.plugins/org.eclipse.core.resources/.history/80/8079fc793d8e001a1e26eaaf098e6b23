@@ -1,0 +1,23 @@
+package edu.miu.cs544;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "film")
+public class Movie {
+	
+	@Id
+	@Column(name = "FILM_ID")
+	private Integer id;
+	
+	private String title;
+	
+	private String description;
+	
+	@Column(name = "RELEASE_YEAR")
+	private Integer year;
+
+}

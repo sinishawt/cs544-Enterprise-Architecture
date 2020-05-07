@@ -1,0 +1,19 @@
+package edu.miu.cs544.service.mapper;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import edu.miu.common.service.mapper.BaseMapper;
+import edu.miu.cs544.domain.Movie;
+import edu.miu.cs544.service.response.MovieResponse;
+import ma.glasnost.orika.MapperFactory;
+
+public class MovieResponseMapper extends BaseMapper<Movie, MovieResponse>{
+
+	
+	@Autowired
+	public MovieResponseMapper(MapperFactory mapperFactory, Class<Movie> sourceType, Class<MovieResponse> targetType) {
+		super(mapperFactory, sourceType, targetType);
+		// TODO Auto-generated constructor stub
+	}
+
+}

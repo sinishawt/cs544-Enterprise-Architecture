@@ -1,0 +1,18 @@
+package edu.miu.cs544;
+
+@Entity
+@Table("film")
+public class Movie {
+	
+	@Id
+	@Column(name = "FILM_ID")
+	private Integer id;
+	
+	private String title;
+	
+	private String description
+	
+	@Column(name = "RELEASE_YEAR")
+	private unteger year;
+
+}

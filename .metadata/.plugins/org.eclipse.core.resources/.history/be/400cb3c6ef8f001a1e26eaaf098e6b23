@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: a-client-service
+sample-service-url: http://localhost:8081/

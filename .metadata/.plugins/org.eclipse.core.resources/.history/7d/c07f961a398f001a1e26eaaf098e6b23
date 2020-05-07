@@ -1,0 +1,74 @@
+package edu.miu.cs544.service;
+
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import edu.miu.common.exception.ResourceNotFoundException;
+import edu.miu.cs544.domain.Movie;
+import edu.miu.cs544.service.response.MovieResponse;
+
+public class MovieServiceImpl implements MovieService {
+
+	@Override
+	public MovieResponse findById(Integer id) throws ResourceNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<MovieResponse> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<MovieResponse> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Long findAllCount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Long searchCount(String query) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<MovieResponse> search(String query) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<MovieResponse> search(String query, Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public MovieResponse convertEntityToResponse(Movie entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<MovieResponse> convertEntityListToResponseList(List<Movie> entityList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<MovieResponse> convertEntityPageToResponsePage(Page<Movie> entityList) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

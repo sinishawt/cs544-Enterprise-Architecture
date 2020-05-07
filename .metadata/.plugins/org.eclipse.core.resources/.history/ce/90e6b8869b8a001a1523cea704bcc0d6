@@ -1,0 +1,15 @@
+package cs544.exercise13_1;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class TraceAdvice {
+	
+	@AfterReturning(pointcut = "execution(* cs544.exercise13_1.CustomerService.getName(..))", returning = "retValue")
+	public void tracemethod(JoinPoint joinpoint, String retValue) {
+		System.out.println("Test");
+		System.out.println(" method = " + retValue + " as a new customer' to");
+	}
+}

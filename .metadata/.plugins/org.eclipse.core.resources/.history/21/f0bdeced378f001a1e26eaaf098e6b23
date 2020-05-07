@@ -1,0 +1,12 @@
+package edu.miu.cs544.service;
+
+import org.springframework.stereotype.Service;
+
+import edu.miu.common.service.BaseReadService;
+import edu.miu.cs544.domain.Movie;
+import edu.miu.cs544.repository.MyEntityRepository;
+
+@Service
+public interface MovieService extends BaseReadService<MyEntityRepository, Movie, Integer>{
+
+}

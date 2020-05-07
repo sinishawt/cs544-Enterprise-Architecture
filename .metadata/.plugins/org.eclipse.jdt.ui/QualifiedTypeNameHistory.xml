@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
+<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="edu.mum.cs.cs544.exercises.Book"/>
+<fullyQualifiedTypeName name="cs544.exercise02_2.Person"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="cs544.exercise16_1.bank.domain.Customer"/>
+<fullyQualifiedTypeName name="cs544.exercise16_1.bank.dao.IAccountDAO"/>
+<fullyQualifiedTypeName name="cs544.exercise16_1.bank.service.ICurrencyConverter"/>
+<fullyQualifiedTypeName name="cs544.exercise16_1.bank.jms.IJMSSender"/>
+<fullyQualifiedTypeName name="cs544.exercise16_1.bank.logging.ILogger"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Propagation"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="cs544.exercise13_2.bank.service.IAccountService"/>
+<fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="java.util.logging.Level"/>
+<fullyQualifiedTypeName name="cs544.exercise13_2.bank.TraceAdvice"/>
+</qualifiedTypeNameHistroy>

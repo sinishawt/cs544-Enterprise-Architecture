@@ -1,0 +1,23 @@
+package exercise11_1;
+
+public class Greeting {
+	
+	private String greeting;
+	
+	public Greeting() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Greeting(String greeting) {
+		this.greeting = greeting;
+	}
+	
+	public void sayHello() {
+		System.out.println(greeting);
+	}
+	
+	public void sayGreeting(String greeting) {
+		this.greeting = greeting;
+	}
+
+}

@@ -1,0 +1,7 @@
+package edu.miu.cs544.service.mapper;
+
+import edu.miu.common.service.mapper.BaseMapper;
+
+public class MovieResponseMapper extends BaseMapper<Movie, MovieResponse>{
+
+}

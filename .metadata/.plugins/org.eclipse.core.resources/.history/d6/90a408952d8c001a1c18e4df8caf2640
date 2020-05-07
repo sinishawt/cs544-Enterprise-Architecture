@@ -1,0 +1,37 @@
+package cs544.exercise16_1.bank.dao;
+
+import cs544.exercise16_1.bank.domain.Account;
+import org.hibernate.SessionFactory;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedList;
+
+public class AccountHibernateDAO implements IAccountDAO{
+
+    private SessionFactory sf;
+    
+    public void setSessionFactory(SessionFactory sessionFactory) {
+    	this.sf = sessionFactory;
+    }
+
+    public void saveAccount(Account account) {
+        sf.getCurrentSession().persist(account);
+    }
+
+    public void updateAccount(Account account) {
+        sf.getCurrentSession().persist(account);
+    }
+
+    public Account loadAccount(long accountnumber) {
+    	Account account = (Account) sf.getCurrentSession().get(Account.class, accountnumber);
+    	return account;
+    }
+
+    public Collection<Account> getAccounts() {
+        return sf.getCurrentSession().createQuery("select a From account a join fetch a.entryList join a.customer").list();
+    }
+
+}
+
+

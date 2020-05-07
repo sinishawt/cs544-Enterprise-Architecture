@@ -1,0 +1,22 @@
+package cs544.exercise13_1;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class TraceAdvice {
+	
+	@After("execution(* cs544.exercise13_1.CustomerService.*(..))")
+	public void test(JoinPoint j) {
+		System.out.println("tsting" + j.getSignature().getName());
+	}
+
+	@AfterReturning(pointcut = "execution(* cs544.exercise13_1.Customer.getName(..))", returning = "retValue")
+	public void tracemethod(JoinPoint joinpoint, String retValue) {
+		System.out.println("Test");
+		System.out.println("CustomerDAO: saving customer " + retValue);
+		System.out.println(" sending 'Welcome " + retValue + " as a new customer' to");
+	}
+}

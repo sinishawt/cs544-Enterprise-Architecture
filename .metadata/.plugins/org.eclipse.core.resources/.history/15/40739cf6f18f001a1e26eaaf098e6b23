@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: a-client-service
+a-client-service: http://localhost:8081/

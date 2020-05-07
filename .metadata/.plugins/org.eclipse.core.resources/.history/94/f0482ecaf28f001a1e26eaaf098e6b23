@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: a-client-service
+aexcersise16-1: aexcersise16-1
